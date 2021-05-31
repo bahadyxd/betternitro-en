@@ -103,7 +103,7 @@ module.exports = (() => {
                         ]),
                         new Settings.SettingGroup("Emoji").append(
                             new Settings.Switch("Using Animated / Still Emoji", "Open No Nitro Emojis", this.settings.emojiBypass, value => this.settings.emojiBypass = value),
-                            new Settings.Slider("Boyut", "Emoji Pixel Büyüklüğü. 40 Önerilir", 16, 64, this.settings.emojiSize, size=>this.settings.emojiSize = size, {markers:[16,20,32,40,64], stickToMarkers:true})
+                            new Settings.Slider("Size", "Emoji Pixel Size. 40 Recommended", 16, 64, this.settings.emojiSize, size=>this.settings.emojiSize = size, {markers:[16,20,32,40,64], stickToMarkers:true})
                         ),
                             new Settings.SettingGroup("Profile Photo").append(...[
                                 new Settings.Switch("Profile Photo", "Enable or disable client supported profile pictures.", this.settings.clientsidePfp, value => this.settings.clientsidePfp = value),
